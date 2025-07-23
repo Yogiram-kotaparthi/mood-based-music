@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.mood-selector label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#moodSelect {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+#songInfo h2 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#songInfo p {
+  margin: 0 0 1rem 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+audio {
+  width: 100%;
+  outline: none;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls button {
+  background: #764ba2;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.controls button:hover {
+  background: #667eea;
+}
+
+#progressBar {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 5px;
+  background: #444;
+  cursor: pointer;
+}
+
+#progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #764ba2;
+  cursor: pointer;
+  box-shadow: 0 0 6px #764ba2;
+  transition: background 0.3s ease;
+}
+
+#progressBar::-webkit-slider-thumb:hover {
+  background: #667eea;
+}
